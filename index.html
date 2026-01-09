@@ -350,7 +350,7 @@
           <article class="requirement-card glass-card">
             <div class="requirement-card__header">
               <span class="requirement-card__icon">👕</span>
-              <h3 class="requirement-card__title">Camiseta Térmica</h3>
+              <h3 class="requirement-card__title">Capa 1: Camiseta</h3>
             </div>
             <ul class="requirement-card__list">
               <li class="requirement-card__item requirement-card__item--critical">
@@ -358,16 +358,16 @@
                 <strong>0% algodón</strong> — El algodón se moja y enfría
               </li>
               <li class="requirement-card__item requirement-card__item--required">
-                <span class="requirement-card__bullet">✓</span>
-                <strong>Lana merina o sintético</strong> (poliéster/poliamida)
+                <span class="requirement-card__bullet">★</span>
+                <strong>Lana merina</strong> — Recomendada (regula temperatura)
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">✓</span>
-                Ajustada al cuerpo, sin apretar
+                Alternativa: sintético (poliéster/poliamida)
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">+</span>
-                Ideal: cuello alto o media cremallera
+                Ajustada al cuerpo, cuello alto ideal
               </li>
             </ul>
           </article>
@@ -376,20 +376,20 @@
           <article class="requirement-card glass-card">
             <div class="requirement-card__header">
               <span class="requirement-card__icon">🩳</span>
-              <h3 class="requirement-card__title">Mallas Térmicas</h3>
+              <h3 class="requirement-card__title">Capa 1: Mallas</h3>
             </div>
             <ul class="requirement-card__list">
               <li class="requirement-card__item requirement-card__item--critical">
                 <span class="requirement-card__bullet">✗</span>
-                <strong>0% algodón</strong> — Mismo criterio que arriba
+                <strong>0% algodón</strong> — Mismo criterio que camiseta
               </li>
               <li class="requirement-card__item requirement-card__item--required">
-                <span class="requirement-card__bullet">✓</span>
-                Ajustadas sin bolsas ni holguras
+                <span class="requirement-card__bullet">★</span>
+                <strong>Lana merina</strong> — Recomendada
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">✓</span>
-                Cómodas para caminar con amplitud
+                Ajustadas, cómodas para caminar
               </li>
             </ul>
           </article>
@@ -411,7 +411,7 @@
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                Exterior cortaviento y repelente al agua
+                <strong>Función: retener calor</strong> — La capa 3 protege del agua
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">+</span>
@@ -484,8 +484,8 @@
                 <strong>0% algodón</strong> — Misma regla que siempre
               </li>
               <li class="requirement-card__item requirement-card__item--required">
-                <span class="requirement-card__bullet">✓</span>
-                <strong>Térmicos de montaña</strong> (lana/sintético)
+                <span class="requirement-card__bullet">★</span>
+                <strong>Lana merina</strong> — Recomendada (térmica + anti-olor)
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">✓</span>
@@ -493,7 +493,7 @@
               </li>
               <li class="requirement-card__item">
                 <span class="requirement-card__bullet">!</span>
-                Si aprietan, enfrían (corta circulación)
+                No deben apretar (corta circulación = frío)
               </li>
             </ul>
           </article>
@@ -773,12 +773,12 @@
 
             <label class="checklist__item checklist__item--highlight">
               <input type="checkbox" name="veleta-capa1" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Capa 1:</strong> Camiseta térmica (lana merina o sintético)</span>
+              <span class="checklist__label"><strong>Capa 1:</strong> Camiseta térmica (lana merina recomendada)</span>
             </label>
 
             <label class="checklist__item checklist__item--highlight">
               <input type="checkbox" name="veleta-mallas" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Capa 1:</strong> Mallas térmicas (0% algodón, ajustadas)</span>
+              <span class="checklist__label"><strong>Capa 1:</strong> Mallas térmicas (lana merina recomendada)</span>
             </label>
 
             <label class="checklist__item checklist__item--highlight">
@@ -808,7 +808,7 @@
 
             <label class="checklist__item">
               <input type="checkbox" name="veleta-calcetines" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Calcetines:</strong> Térmicos (lana/sintético), media caña, sin apretar</span>
+              <span class="checklist__label"><strong>Calcetines:</strong> Térmicos (lana merina recomendada), media caña</span>
             </label>
 
             <label class="checklist__item checklist__item--highlight">
@@ -837,8 +837,13 @@
             </label>
 
             <label class="checklist__item checklist__item--highlight">
-              <input type="checkbox" name="veleta-bocadillo" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Almuerzo:</strong> Bocadillo + snacks energéticos</span>
+              <input type="checkbox" name="veleta-bocadillo-mm" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label"><strong>Media mañana:</strong> Bocadillo pequeño + snack energético</span>
+            </label>
+
+            <label class="checklist__item checklist__item--highlight">
+              <input type="checkbox" name="veleta-bocadillo-almuerzo" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label"><strong>Almuerzo:</strong> Bocadillo</span>
             </label>
 
             <!-- OTROS -->
@@ -876,7 +881,7 @@
             <div class="checklist__progress-bar">
               <div id="veleta-progress-fill" class="checklist__progress-fill" style="width: 0%;"></div>
             </div>
-            <p id="veleta-progress-text" class="checklist__progress-text">0 de 18 items preparados</p>
+            <p id="veleta-progress-text" class="checklist__progress-text">0 de 19 items preparados</p>
           </div>
         </div>
       </div>
