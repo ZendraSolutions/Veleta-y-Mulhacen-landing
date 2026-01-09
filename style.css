@@ -2037,11 +2037,17 @@ img {
 }
 
 .locked-overlay__icon {
-  width: 64px;
-  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: var(--space-4);
   color: var(--color-text-muted);
   opacity: 0.6;
+}
+
+.locked-overlay__icon .icon {
+  width: 64px;
+  height: 64px;
 }
 
 .locked-overlay__title {
@@ -2365,3 +2371,149 @@ img {
     display: none !important;
   }
 }
+
+/* ============================================
+   SVG ICON SYSTEM
+   ============================================ */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: none;
+  vertical-align: -0.125em;
+}
+
+.icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--md {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--lg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--xl {
+  width: 32px;
+  height: 32px;
+}
+
+/* Icon in card headers */
+.equipment-card__icon .icon,
+.rule-card__icon .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-primary);
+}
+
+/* Icon in list items */
+.equipment-card__item-icon .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-muted);
+}
+
+/* Requirements card icons */
+.requirement-card__icon .icon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent-primary);
+}
+
+/* Product category icons */
+.product-category__icon .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-inverse);
+}
+
+/* Checklist title icon */
+.checklist__title-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-success);
+}
+
+/* Footer heart icon */
+.footer__heart .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-accent-primary);
+  fill: var(--color-accent-primary);
+}
+
+/* Layer card warning icon */
+.layer-card__warning .icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* ============================================
+   LOGO STYLES
+   ============================================ */
+.logo-image {
+  display: block;
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.logo-image--header {
+  max-width: 320px;
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .logo-image--header {
+    max-width: 400px;
+  }
+}
+
+/* ============================================
+   MOBILE SPECIFIC ADJUSTMENTS
+   ============================================ */
+@media (max-width: 639px) {
+  /* Requirement cards - prevent text overflow */
+  .requirement-card__header {
+    gap: var(--space-2);
+  }
+
+  .requirement-card__title {
+    font-size: var(--text-sm);
+  }
+
+  .requirement-card__icon .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Equipment cards - ensure icons don't shrink */
+  .equipment-card__item-icon {
+    flex-shrink: 0;
+    min-width: 24px;
+  }
+
+  /* Rule cards - ensure proper stacking */
+  .rule-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .rule-card__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Header badge - ensure icon alignment */
+  .header__badge .icon {
+    vertical-align: middle;
+  }
+}
+
