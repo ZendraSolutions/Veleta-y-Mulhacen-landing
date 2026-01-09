@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Información privada para participantes de las excursiones SocialVentura Invierno 2026: Veleta (3.398m) y Mulhacén (3.479m) en Sierra Nevada, España.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="SocialVentura">
+  <meta name="theme-color" content="#F2F2F2">
+
+  <title>SocialVentura · Invierno 2026 | Excursiones Sierra Nevada</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/">
+  <meta property="og:title" content="SocialVentura · Invierno 2026">
+  <meta property="og:description" content="Excursiones guiadas de alta montaña al Veleta y Mulhacén en Sierra Nevada">
+  <meta property="og:image" content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.png">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SocialVentura · Invierno 2026">
+  <meta name="twitter:description" content="Excursiones de alta montaña en Sierra Nevada">
+  <meta name="twitter:image" content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,10 90,90 10,90' fill='%23C75D32'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SocialVentura Invierno 2026 - Excursiones Sierra Nevada",
+    "description": "Excursiones guiadas de alta montaña al Veleta (3.398m) y Mulhacén (3.479m) en Sierra Nevada",
+    "startDate": "2026-01-17",
+    "endDate": "2026-02-15",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Sierra Nevada",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Granada",
+        "addressRegion": "Andalucía",
+        "addressCountry": "ES"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "SocialVentura",
+      "url": "https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/LimitedAvailability"
+    },
+    "maximumAttendeeCapacity": 15
+  }
+  </script>
+</head>
+<body>
+  <!-- ============================================
+       PASSWORD GATE (Initially Visible)
+       ============================================ -->
+  <div id="password-gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate__container">
+      <div class="gate__logo">
+        <span class="gate__logo-text">SOCIALVENTURA</span>
+      </div>
+      
+      <h1 id="gate-title" class="gate__title">
+        Información privada para participantes
+      </h1>
+      
+      <form id="password-form" class="gate__form" autocomplete="off">
+        <div class="gate__input-wrapper">
+          <input 
+            type="password" 
+            id="password-input" 
+            class="gate__input" 
+            placeholder="Introduce la contraseña"
+            aria-label="Contraseña de acceso"
+            required
+          >
+        </div>
+        <button type="submit" id="password-submit" class="gate__submit">
+          Acceder
+        </button>
+        <p id="password-error" class="gate__error" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================
+       MAIN CONTENT (Initially Hidden)
+       ============================================ -->
+  <main id="main-content" class="content" hidden>
+    
+    <!-- ============================================
+         HEADER / INTRO
+         ============================================ -->
+    <header class="header">
+      <div class="container">
+        <span class="header__badge animate-fade-in-up">
+          ⛷️ Invierno 2026
+        </span>
+        
+        <h1 class="heading-1 header__title animate-fade-in-up stagger-1">
+          SOCIALVENTURA
+        </h1>
+        
+        <p class="header__subtitle animate-fade-in-up stagger-2">
+          Información completa para las excursiones de alta montaña en Sierra Nevada. 
+          15 plazas disponibles.
+        </p>
+        
+        <div class="header__team animate-fade-in-up stagger-3">
+          <div class="header__stat">
+            <span class="header__stat-value">15</span>
+            <span class="header__stat-label">Participantes</span>
+          </div>
+          <div class="header__stat">
+            <span class="header__stat-value">3</span>
+            <span class="header__stat-label">Guías</span>
+          </div>
+          <div class="header__stat">
+            <span class="header__stat-value">5:1</span>
+            <span class="header__stat-label">Ratio</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================
+         RULES / SAFETY SECTION
+         ============================================ -->
+    <section class="rules-section" aria-labelledby="rules-title">
+      <div class="container">
+        <div class="rules__header">
+          <h2 id="rules-title" class="heading-3">⚠️ Reglas Clave</h2>
+        </div>
+        
+        <div class="rules__grid">
+          <article class="glass-card rule-card">
+            <div class="rule-card__icon">🧥</div>
+            <div class="rule-card__content">
+              <h3 class="rule-card__title">Sistema 3 Capas</h3>
+              <p class="rule-card__text">Obligatorio. Ver explicación más abajo.</p>
+            </div>
+          </article>
+          
+          <article class="glass-card rule-card">
+            <div class="rule-card__icon">🚫</div>
+            <div class="rule-card__content">
+              <h3 class="rule-card__title">Evitar Algodón</h3>
+              <p class="rule-card__text">Retiene humedad y enfría el cuerpo.</p>
+            </div>
+          </article>
+          
+          <article class="glass-card rule-card">
+            <div class="rule-card__icon">💧</div>
+            <div class="rule-card__content">
+              <h3 class="rule-card__title">Hidratación</h3>
+              <p class="rule-card__text">Mínimo 1,5L de agua (salvo indicación del guía).</p>
+            </div>
+          </article>
+          
+          <article class="glass-card rule-card">
+            <div class="rule-card__icon">🔒</div>
+            <div class="rule-card__content">
+              <h3 class="rule-card__title">Seguridad</h3>
+              <p class="rule-card__text">Sigue las instrucciones del guía. No te separes del grupo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         VELETA SECTION (ACTIVE)
+         ============================================ -->
+    <section id="veleta" class="excursion" aria-labelledby="veleta-title">
+      <!-- Hero Image -->
+      <div class="excursion__hero" style="background-image: url('assets/images/hero-veleta.png');">
+        <div class="excursion__hero-overlay"></div>
+        <div class="excursion__hero-content">
+          <span class="excursion__date">17 ENERO 2026</span>
+          <h2 id="veleta-title" class="excursion__title">VELETA</h2>
+          <p class="excursion__subtitle">3.398m · Subida y bajada (día)</p>
+          
+          <div class="excursion__meeting">
+            <span class="excursion__meeting-icon">⏰</span>
+            <span class="excursion__meeting-text">Punto de encuentro: 6:30 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content Grid -->
+      <div class="excursion__content">
+        <div class="excursion__grid">
+          <!-- Organization Provides -->
+          <article class="glass-card equipment-card">
+            <div class="equipment-card__header">
+              <div class="equipment-card__icon">🎒</div>
+              <h3 class="equipment-card__title">La organización aporta</h3>
+            </div>
+            <ul class="equipment-card__list">
+              <li class="equipment-card__item equipment-card__item--highlight">
+                <span class="equipment-card__item-icon">🪓</span>
+                <span class="equipment-card__item-text"><strong>Piolets</strong></span>
+              </li>
+              <li class="equipment-card__item equipment-card__item--highlight">
+                <span class="equipment-card__item-icon">🥾</span>
+                <span class="equipment-card__item-text"><strong>Crampones</strong></span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🍎</span>
+                <span class="equipment-card__item-text">Aperitivo</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">👥</span>
+                <span class="equipment-card__item-text">Guías expertos (ratio 5:1)</span>
+              </li>
+            </ul>
+          </article>
+          
+          <!-- Participant Brings -->
+          <article class="glass-card equipment-card">
+            <div class="equipment-card__header">
+              <div class="equipment-card__icon">🧳</div>
+              <h3 class="equipment-card__title">Cada participante debe traer</h3>
+            </div>
+            <ul class="equipment-card__list">
+              <li class="equipment-card__item equipment-card__item--highlight">
+                <span class="equipment-card__item-icon">💧</span>
+                <span class="equipment-card__item-text"><strong>Agua: 1,5L mínimo</strong></span>
+              </li>
+              <li class="equipment-card__item equipment-card__item--highlight">
+                <span class="equipment-card__item-icon">🥪</span>
+                <span class="equipment-card__item-text"><strong>Almuerzo: bocadillo</strong></span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🧥</span>
+                <span class="equipment-card__item-text">Ropa de 3 capas (ver teoría abajo)</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🧤</span>
+                <span class="equipment-card__item-text">Guantes + gorro + buff</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🥾</span>
+                <span class="equipment-card__item-text">Calzado de montaña estable</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🔦</span>
+                <span class="equipment-card__item-text">Frontal/linterna (seguridad)</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">🕶️</span>
+                <span class="equipment-card__item-text">Gafas de sol + SPF 50 + labial</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">📱</span>
+                <span class="equipment-card__item-text">Móvil cargado + batería externa</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon">💊</span>
+                <span class="equipment-card__item-text">Medicación personal (si aplica)</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         3-LAYER THEORY SECTION
+         ============================================ -->
+    <section class="layers-section" aria-labelledby="layers-title">
+      <div class="container">
+        <div class="layers__header">
+          <h2 id="layers-title" class="heading-2 layers__title">Teoría de las 3 Capas</h2>
+          <p class="layers__subtitle">Sistema fundamental para mantener el calor corporal en alta montaña</p>
+        </div>
+        
+        <div class="layers__grid">
+          <!-- Layer 1 -->
+          <article class="glass-card layer-card">
+            <div class="layer-card__number">1</div>
+            <h3 class="layer-card__name">Base Técnica</h3>
+            <p class="layer-card__function">Evacúa el sudor</p>
+            <p class="layer-card__description">
+              Camiseta técnica transpirable en contacto directo con la piel. 
+              Aleja la humedad del cuerpo.
+            </p>
+            <div class="layer-card__warning">
+              ⚠️ NUNCA algodón
+            </div>
+          </article>
+          
+          <!-- Layer 2 -->
+          <article class="glass-card layer-card">
+            <div class="layer-card__number">2</div>
+            <h3 class="layer-card__name">Aislante</h3>
+            <p class="layer-card__function">Retiene el calor</p>
+            <p class="layer-card__description">
+              Forro polar, plumas o fibra sintética. 
+              Crea una cámara de aire caliente.
+            </p>
+          </article>
+          
+          <!-- Layer 3 -->
+          <article class="glass-card layer-card">
+            <div class="layer-card__number">3</div>
+            <h3 class="layer-card__name">Protección</h3>
+            <p class="layer-card__function">Corta viento y agua</p>
+            <p class="layer-card__description">
+              Impermeable tipo Gore-Tex o similar. 
+              Protege de los elementos externos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTOS RECOMENDADOS
+         ============================================ -->
+    <section class="products-section" aria-labelledby="products-title">
+      <div class="container">
+        <div class="products__header">
+          <h2 id="products-title" class="heading-2 products__title">Equipamiento Recomendado</h2>
+          <p class="products__subtitle">Productos seleccionados por nuestros guías para alta montaña</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="products__tabs" role="tablist" aria-label="Categorías de productos">
+          <button class="products__tab products__tab--active" role="tab" aria-selected="true" data-category="base">
+            Capa Base
+          </button>
+          <button class="products__tab" role="tab" aria-selected="false" data-category="aislante">
+            Aislante
+          </button>
+          <button class="products__tab" role="tab" aria-selected="false" data-category="exterior">
+            Exterior
+          </button>
+          <button class="products__tab" role="tab" aria-selected="false" data-category="calzado">
+            Calzado
+          </button>
+          <button class="products__tab" role="tab" aria-selected="false" data-category="accesorios">
+            Accesorios
+          </button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products__grid" id="products-grid">
+
+          <!-- CAPA BASE -->
+          <article class="glass-card product-card" data-category="base">
+            <span class="product-card__badge">Recomendado</span>
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Camiseta térmica" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Camiseta Térmica</h3>
+              <p class="product-card__description">Primera capa transpirable, ideal para alta montaña</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~25€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="base">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Mallas térmicas" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Mallas Térmicas</h3>
+              <p class="product-card__description">Capa base inferior transpirable</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~30€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <!-- AISLANTE -->
+          <article class="glass-card product-card" data-category="aislante" style="display: none;">
+            <span class="product-card__badge">Recomendado</span>
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Forro polar" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Forro Polar</h3>
+              <p class="product-card__description">Segunda capa aislante, retiene el calor corporal</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~40€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="aislante" style="display: none;">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Chaqueta de plumas" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Chaqueta Plumas</h3>
+              <p class="product-card__description">Aislamiento ultraligero para frío extremo</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~80€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <!-- EXTERIOR -->
+          <article class="glass-card product-card" data-category="exterior" style="display: none;">
+            <span class="product-card__badge">Recomendado</span>
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Chaqueta impermeable" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Chaqueta Impermeable</h3>
+              <p class="product-card__description">Tercera capa, protección contra viento y agua</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~100€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="exterior" style="display: none;">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Pantalón impermeable" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Pantalón Impermeable</h3>
+              <p class="product-card__description">Resistente al agua y transpirable</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~70€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <!-- CALZADO -->
+          <article class="glass-card product-card" data-category="calzado" style="display: none;">
+            <span class="product-card__badge">Recomendado</span>
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Botas de montaña" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Botas de Montaña</h3>
+              <p class="product-card__description">Impermeables, suela Vibram, compatibles con crampones</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~150€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="calzado" style="display: none;">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Calcetines técnicos" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Calcetines Técnicos</h3>
+              <p class="product-card__description">Lana merino, sin costuras, altura media</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~15€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <!-- ACCESORIOS -->
+          <article class="glass-card product-card" data-category="accesorios" style="display: none;">
+            <span class="product-card__badge">Recomendado</span>
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Guantes de montaña" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Guantes Impermeables</h3>
+              <p class="product-card__description">Aislados, táctiles, resistentes al viento</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~35€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="accesorios" style="display: none;">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Gorro térmico" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Gorro Térmico</h3>
+              <p class="product-card__description">Cubre orejas, material técnico</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~12€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card product-card" data-category="accesorios" style="display: none;">
+            <div class="product-card__image">
+              <img src="assets/products/placeholder.png" alt="Gafas de sol" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Gafas de Sol Cat.4</h3>
+              <p class="product-card__description">Protección UV alta montaña, antivaho</p>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">~25€</span>
+              <a href="#" class="product-card__link" target="_blank" rel="noopener">
+                Ver producto →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="products__disclaimer">
+          * Los precios son orientativos. Enlaces a tiendas externas.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         VELETA CHECKLIST
+         ============================================ -->
+    <section class="checklist-section" aria-labelledby="checklist-veleta-title">
+      <div class="container">
+        <div class="checklist__header">
+          <h2 id="checklist-veleta-title" class="heading-2">Tu Checklist Personal</h2>
+          <p class="body-small" style="color: var(--color-text-muted);">
+            Marca los items que ya tienes preparados. Se guarda automáticamente.
+          </p>
+        </div>
+        
+        <div class="glass-card checklist__card">
+          <div class="checklist__title">
+            <span class="checklist__title-icon">☑️</span>
+            <h3 class="heading-4">Checklist Veleta (Día)</h3>
+          </div>
+          
+          <form id="checklist-veleta" class="checklist__form">
+            <label class="checklist__item checklist__item--highlight">
+              <input type="checkbox" name="veleta-capas" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">3 capas completas (capa 1 + 2 + 3)</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-guantes" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Guantes + gorro + buff</span>
+            </label>
+            
+            <label class="checklist__item checklist__item--highlight">
+              <input type="checkbox" name="veleta-agua" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Agua 1,5L mínimo</span>
+            </label>
+            
+            <label class="checklist__item checklist__item--highlight">
+              <input type="checkbox" name="veleta-bocadillo" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Bocadillo (almuerzo)</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-calzado" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Calzado de montaña estable</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-frontal" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Frontal/linterna</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-gafas" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Gafas de sol + SPF 50 + labial</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-movil" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Móvil cargado + batería externa</span>
+            </label>
+            
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-medicacion" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label">Medicación personal (si aplica)</span>
+            </label>
+          </form>
+          
+          <div class="checklist__progress">
+            <div class="checklist__progress-bar">
+              <div id="veleta-progress-fill" class="checklist__progress-fill" style="width: 0%;"></div>
+            </div>
+            <p id="veleta-progress-text" class="checklist__progress-text">0 de 9 items preparados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         MULHACÉN SECTION (LOCKED)
+         ============================================ -->
+    <section id="mulhacen" class="excursion excursion--locked" aria-labelledby="mulhacen-title">
+      <!-- Hero Image -->
+      <div class="excursion__hero" style="background-image: url('assets/images/hero-mulhacen.png'); filter: blur(3px) brightness(0.5);">
+        <div class="excursion__hero-overlay"></div>
+        <div class="excursion__hero-content">
+          <span class="excursion__date">14-15 FEBRERO 2026</span>
+          <h2 id="mulhacen-title" class="excursion__title">MULHACÉN</h2>
+          <p class="excursion__subtitle">3.479m · Ascenso con pernocta</p>
+        </div>
+      </div>
+      
+      <!-- Locked Overlay -->
+      <div class="locked-overlay">
+        <span class="locked-overlay__icon">🔒</span>
+        <h3 class="locked-overlay__title">Próximamente</h3>
+        <p class="locked-overlay__text">La información detallada se desbloqueará antes de la excursión</p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__logo">SOCIALVENTURA</p>
+        <p class="footer__text">
+          Hecho con <span class="footer__heart">❤️</span> para la montaña · Invierno 2026
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
