@@ -2406,7 +2406,12 @@ img {
 }
 
 /* Icon in card headers */
-.equipment-card__icon .icon,
+.equipment-card__icon .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-secondary);
+}
+
 .rule-card__icon .icon {
   width: 24px;
   height: 24px;
