@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
-  <rect width="400" height="400" fill="#F8F5F2"/>
-  <rect x="100" y="80" width="200" height="240" rx="8" fill="#E8E4E0"/>
-  <path d="M150 160 L200 120 L250 160 L250 280 L150 280 Z" fill="#C75D32" opacity="0.9"/>
-  <circle cx="200" cy="100" r="25" fill="#C75D32" opacity="0.7"/>
-  <rect x="165" y="200" width="70" height="4" rx="2" fill="#fff" opacity="0.5"/>
-  <rect x="175" y="215" width="50" height="4" rx="2" fill="#fff" opacity="0.3"/>
-  <text x="200" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="middle">Capa Base</text>
-</svg>
