@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#F8F5F2"/>
+  <rect x="100" y="80" width="200" height="240" rx="8" fill="#E8E4E0"/>
+  <!-- Hardshell jacket shape -->
+  <path d="M135 135 L200 100 L265 135 L275 285 L125 285 Z" fill="#2D8B57" opacity="0.9"/>
+  <!-- Hood -->
+  <ellipse cx="200" cy="95" rx="40" ry="28" fill="#2D8B57" opacity="0.85"/>
+  <!-- Zipper -->
+  <line x1="200" y1="130" x2="200" y2="280" stroke="#1A1A1A" stroke-width="3" opacity="0.4"/>
+  <!-- Pockets -->
+  <rect x="145" y="200" width="40" height="25" rx="3" fill="#1A1A1A" opacity="0.15"/>
+  <rect x="215" y="200" width="40" height="25" rx="3" fill="#1A1A1A" opacity="0.15"/>
+  <text x="200" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="middle">Capa Exterior</text>
+</svg>

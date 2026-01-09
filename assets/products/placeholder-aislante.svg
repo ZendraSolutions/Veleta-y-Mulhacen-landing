@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#F8F5F2"/>
+  <rect x="100" y="80" width="200" height="240" rx="8" fill="#E8E4E0"/>
+  <!-- Puffy jacket shape -->
+  <path d="M140 140 L200 110 L260 140 L270 280 L130 280 Z" fill="#3B7CB8" opacity="0.9"/>
+  <!-- Hood -->
+  <ellipse cx="200" cy="105" rx="35" ry="25" fill="#3B7CB8" opacity="0.8"/>
+  <!-- Quilting lines -->
+  <line x1="145" y1="170" x2="255" y2="170" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <line x1="142" y1="200" x2="258" y2="200" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <line x1="138" y1="230" x2="262" y2="230" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <line x1="135" y1="260" x2="265" y2="260" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <text x="200" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="middle">Capa Aislante</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#F8F5F2"/>
+  <rect x="100" y="100" width="200" height="200" rx="8" fill="#E8E4E0"/>
+  <!-- Sock shape -->
+  <path d="M150 150 L150 250 Q150 280 180 280 L260 280 Q280 280 280 260 L280 220 Q280 200 260 200 L220 200 L220 150 Z" fill="#1A1A1A" opacity="0.85"/>
+  <!-- Texture lines -->
+  <line x1="160" y1="170" x2="210" y2="170" stroke="#fff" stroke-width="2" opacity="0.2"/>
+  <line x1="160" y1="190" x2="210" y2="190" stroke="#fff" stroke-width="2" opacity="0.2"/>
+  <!-- Heel accent -->
+  <ellipse cx="175" cy="260" rx="20" ry="15" fill="#C75D32" opacity="0.8"/>
+  <text x="200" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="middle">Calzado</text>
+</svg>
