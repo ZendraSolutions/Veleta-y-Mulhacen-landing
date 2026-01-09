@@ -329,43 +329,6 @@ const SVApp = (function () {
     }
 
     // ============================================
-    // PRODUCT TABS
-    // ============================================
-    const ProductTabs = {
-        init() {
-            const tabs = $$('.products__tab');
-            const products = $$('.product-card');
-
-            if (tabs.length === 0) return;
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const category = tab.dataset.category;
-
-                    // Update active tab
-                    tabs.forEach(t => {
-                        t.classList.remove('products__tab--active');
-                        t.setAttribute('aria-selected', 'false');
-                    });
-                    tab.classList.add('products__tab--active');
-                    tab.setAttribute('aria-selected', 'true');
-
-                    // Filter products
-                    products.forEach(product => {
-                        if (product.dataset.category === category) {
-                            product.style.display = '';
-                        } else {
-                            product.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            console.log('[SVApp] Product tabs initialized');
-        }
-    };
-
-    // ============================================
     // SCROLL ANIMATIONS
     // ============================================
     const ScrollAnimations = {
@@ -432,9 +395,6 @@ const SVApp = (function () {
         // Initialize checklists
         Checklist.init('veleta');
         Checklist.init('mulhacen');
-
-        // Initialize product tabs
-        ProductTabs.init();
 
         // Initialize scroll animations
         ScrollAnimations.init();
