@@ -2522,3 +2522,18 @@ img {
   }
 }
 
+
+/* Footer Logo */
+.logo-image--footer {
+  max-width: 140px;
+  margin: 0 auto var(--space-4);
+  opacity: 0.8;
+  filter: grayscale(100%);
+  transition: all var(--transition-base);
+}
+
+.logo-image--footer:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
