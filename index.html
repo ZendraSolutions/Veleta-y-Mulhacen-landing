@@ -18,7 +18,7 @@
   <meta property="og:title" content="SocialVentura · Invierno 2026">
   <meta property="og:description" content="Excursiones guiadas de alta montaña al Veleta y Mulhacén en Sierra Nevada">
   <meta property="og:image"
-    content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.png">
+    content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.jpg">
   <meta property="og:locale" content="es_ES">
 
   <!-- Twitter -->
@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="SocialVentura · Invierno 2026">
   <meta name="twitter:description" content="Excursiones de alta montaña en Sierra Nevada">
   <meta name="twitter:image"
-    content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.png">
+    content="https://ZendraSolutions.github.io/Veleta-y-Mulhacen-landing/assets/images/hero-veleta.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png?v=fixed2">
@@ -226,6 +226,12 @@
       <rect x="3" y="11" width="18" height="11" rx="2" />
       <path d="M7 11V7a5 5 0 0 1 10 0v4" />
     </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+      <line x1="8" y1="2" x2="8" y2="18" />
+      <line x1="16" y1="6" x2="16" y2="22" />
+    </symbol>
   </svg>
 
   <!-- ============================================
@@ -357,12 +363,12 @@
          ============================================ -->
     <section id="veleta" class="excursion" aria-labelledby="veleta-title">
       <!-- Hero Image -->
-      <div class="excursion__hero" style="background-image: url('assets/images/hero-veleta.png');">
+      <div class="excursion__hero" style="background-image: url('assets/images/hero-veleta.jpg');">
         <div class="excursion__hero-overlay"></div>
         <div class="excursion__hero-content">
           <span class="excursion__date">17 ENERO 2026</span>
           <h2 id="veleta-title" class="excursion__title">VELETA</h2>
-          <p class="excursion__subtitle">3.398m · Subida y bajada (día)</p>
+          <p class="excursion__subtitle">3.408m · Circular · 12,7 km · +973m</p>
 
           <div class="excursion__meeting">
             <span class="excursion__meeting-icon"><svg class="icon">
@@ -370,6 +376,14 @@
               </svg></span>
             <span class="excursion__meeting-text">Punto de encuentro: 6:30 AM</span>
           </div>
+
+          <a href="https://maps.app.goo.gl/56AjCVme6JJKB3nD8" class="excursion__location-link" target="_blank"
+            rel="noopener noreferrer">
+            <svg class="icon">
+              <use href="#icon-map" />
+            </svg>
+            Ver ubicación en Google Maps →
+          </a>
         </div>
       </div>
 
@@ -488,6 +502,91 @@
     </section>
 
     <!-- ============================================
+         ROUTE DETAILS SECTION - VELETA
+         ============================================ -->
+    <section class="route-details-section" aria-labelledby="route-details-title">
+      <div class="container">
+        <article class="glass-card route-info-card">
+          <div class="route-info__header">
+            <div class="route-info__icon">
+              <svg class="icon">
+                <use href="#icon-mountain" />
+              </svg>
+            </div>
+            <h3 id="route-details-title" class="route-info__title">Detalles de la Ruta</h3>
+            <span class="route-info__badge">Circular</span>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="route-info__grid">
+            <div class="route-stat">
+              <span class="route-stat__label">Distancia</span>
+              <span class="route-stat__value">12,7 km</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat__label">Desnivel +</span>
+              <span class="route-stat__value">973 m</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat__label">Desnivel -</span>
+              <span class="route-stat__value">973 m</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat__label">Altitud máx</span>
+              <span class="route-stat__value">3.408 m</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat__label">Altitud mín</span>
+              <span class="route-stat__value">2.510 m</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat__label">Dificultad</span>
+              <span class="route-stat__value route-stat__value--moderate">Moderado</span>
+            </div>
+          </div>
+
+          <!-- Elevation Profile Image -->
+          <div class="route-info__profile">
+            <h4 class="route-info__profile-title">Perfil de Elevación</h4>
+            <img src="assets/images/veleta-elevation-profile.png" alt="Perfil de elevación Ruta Veleta"
+              class="route-info__profile-img">
+            <p class="route-info__profile-caption">
+              Gráfica de elevación de la ruta circular del Veleta
+            </p>
+          </div>
+
+          <!-- Time Stats -->
+          <div class="route-info__times">
+            <div class="route-time">
+              <span class="route-time__icon">
+                <svg class="icon">
+                  <use href="#icon-clock" />
+                </svg>
+              </span>
+              <span class="route-time__label">Tiempo en movimiento:</span>
+              <span class="route-time__value">3h 50min</span>
+            </div>
+            <div class="route-time">
+              <span class="route-time__icon">
+                <svg class="icon">
+                  <use href="#icon-clock" />
+                </svg>
+              </span>
+              <span class="route-time__label">Tiempo total estimado:</span>
+              <span class="route-time__value">7h 49min</span>
+            </div>
+          </div>
+
+          <!-- Link to Wikiloc -->
+          <a href="https://es.wikiloc.com/rutas-senderismo/virgen-de-las-nieves-mirador-del-corral-del-veleta-y-veleta-desde-hoya-de-la-mora-160062287"
+            class="route-info__link" target="_blank" rel="noopener noreferrer">
+            Ver ruta completa en Wikiloc →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================
          3-LAYER THEORY SECTION
          ============================================ -->
     <section class="layers-section" aria-labelledby="layers-title">
@@ -520,7 +619,7 @@
             <h3 class="layer-card__name">Aislante</h3>
             <p class="layer-card__function">Retiene el calor</p>
             <p class="layer-card__description">
-              Forro polar, plumas o fibra sintética.
+              Plumas o fibra sintética.
               Crea una cámara de aire caliente.
             </p>
           </article>
@@ -731,7 +830,7 @@
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                <strong>Suela rígida o semi-rígida</strong> — No debe doblarse
+                <strong>Caña alta</strong> — Botas de trekking con buen soporte de tobillo
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
@@ -871,7 +970,7 @@
               </svg></span>
             Calzado
           </h3>
-          <p class="product-category__description">Calcetines térmicos y botas de montaña con suela rígida para
+          <p class="product-category__description">Calcetines térmicos y botas de trekking de caña alta compatibles con
             crampones.</p>
 
           <ul class="product-list">
@@ -1035,7 +1134,7 @@
 
             <label class="checklist__item checklist__item--highlight">
               <input type="checkbox" name="veleta-botas" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Botas:</strong> Alta, suela rígida, compatible crampones,
+              <span class="checklist__label"><strong>Botas:</strong> Trekking, caña alta, compatible crampones,
                 impermeable</span>
             </label>
 
