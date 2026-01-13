@@ -419,6 +419,12 @@
               </li>
               <li class="equipment-card__item">
                 <span class="equipment-card__item-icon"><svg class="icon">
+                    <use href="#icon-heart" />
+                  </svg></span>
+                <span class="equipment-card__item-text">Manta térmica</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon"><svg class="icon">
                     <use href="#icon-users" />
                   </svg></span>
                 <span class="equipment-card__item-text">Guías expertos (ratio 5:1)</span>
@@ -481,7 +487,13 @@
                 <span class="equipment-card__item-icon"><svg class="icon">
                     <use href="#icon-sunglasses" />
                   </svg></span>
-                <span class="equipment-card__item-text">Gafas de sol + SPF 50 + labial</span>
+                <span class="equipment-card__item-text">Gafas de sol con protección UV + SPF 50 + labial</span>
+              </li>
+              <li class="equipment-card__item">
+                <span class="equipment-card__item-icon"><svg class="icon">
+                    <use href="#icon-snowflake" />
+                  </svg></span>
+                <span class="equipment-card__item-text">Gafas de ventisca (recomendable)</span>
               </li>
               <li class="equipment-card__item">
                 <span class="equipment-card__item-icon"><svg class="icon">
@@ -555,28 +567,6 @@
             </p>
           </div>
 
-          <!-- Time Stats -->
-          <div class="route-info__times">
-            <div class="route-time">
-              <span class="route-time__icon">
-                <svg class="icon">
-                  <use href="#icon-clock" />
-                </svg>
-              </span>
-              <span class="route-time__label">Tiempo en movimiento:</span>
-              <span class="route-time__value">3h 50min</span>
-            </div>
-            <div class="route-time">
-              <span class="route-time__icon">
-                <svg class="icon">
-                  <use href="#icon-clock" />
-                </svg>
-              </span>
-              <span class="route-time__label">Tiempo total estimado:</span>
-              <span class="route-time__value">7h 49min</span>
-            </div>
-          </div>
-
           <!-- Link to Wikiloc -->
           <a href="https://es.wikiloc.com/rutas-senderismo/virgen-de-las-nieves-mirador-del-corral-del-veleta-y-veleta-desde-hoya-de-la-mora-160062287"
             class="route-info__link" target="_blank" rel="noopener noreferrer">
@@ -603,8 +593,8 @@
             <h3 class="layer-card__name">Base Técnica</h3>
             <p class="layer-card__function">Evacúa el sudor</p>
             <p class="layer-card__description">
-              Camiseta técnica transpirable en contacto directo con la piel.
-              Aleja la humedad del cuerpo.
+              Camiseta térmica de manga larga y mallas térmicas en contacto directo con la piel.
+              Aleja la humedad del cuerpo. Recomendable para -10°C.
             </p>
             <div class="layer-card__warning">
               <svg class="icon">
@@ -619,7 +609,7 @@
             <h3 class="layer-card__name">Aislante</h3>
             <p class="layer-card__function">Retiene el calor</p>
             <p class="layer-card__description">
-              Plumas o fibra sintética.
+              Plumífero con capucha y manga larga (plumas o fibra sintética).
               Crea una cámara de aire caliente.
             </p>
           </article>
@@ -820,25 +810,25 @@
               <span class="requirement-card__icon"><svg class="icon">
                   <use href="#icon-boot" />
                 </svg></span>
-              <h3 class="requirement-card__title">Botas para Crampones</h3>
+              <h3 class="requirement-card__title">Botas de Trekking</h3>
               <span class="requirement-card__badge">Crítico</span>
             </div>
             <ul class="requirement-card__list">
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                <strong>Alta</strong> — Cubre bien el tobillo
+                <strong>Caña alta</strong> — Soporte firme de tobillo
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                <strong>Caña alta</strong> — Botas de trekking con buen soporte de tobillo
+                <strong>Compatible con crampones</strong> — Verificar ficha técnica
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                <strong>Compatible con crampones</strong> — Verificar ficha
+                <strong>Impermeable</strong> — Gore-Tex o membrana similar
               </li>
               <li class="requirement-card__item requirement-card__item--required">
                 <span class="requirement-card__bullet">✓</span>
-                <strong>Impermeable</strong> (Gore-Tex o similar)
+                <strong>Suela adherente</strong> — Vibram o similar para nieve/hielo
               </li>
             </ul>
             <div class="requirement-card__tip">
@@ -1156,8 +1146,13 @@
             </label>
 
             <label class="checklist__item">
-              <input type="checkbox" name="veleta-gafas" class="checklist__checkbox" data-excursion="veleta">
-              <span class="checklist__label"><strong>Gafas:</strong> Categoría 3-4 (protección nieve/viento)</span>
+              <input type="checkbox" name="veleta-gafas-sol" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label"><strong>Gafas de sol:</strong> Con protección UV (Categoría 3-4)</span>
+            </label>
+
+            <label class="checklist__item">
+              <input type="checkbox" name="veleta-gafas-ventisca" class="checklist__checkbox" data-excursion="veleta">
+              <span class="checklist__label"><strong>Gafas de ventisca:</strong> Recomendable (protección máxima)</span>
             </label>
 
             <!-- ALIMENTACIÓN -->

@@ -1525,46 +1525,6 @@ img {
   text-align: center;
 }
 
-/* Time Stats */
-.route-info__times {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
-  padding: var(--space-4);
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: var(--radius-md);
-}
-
-.route-time {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  font-size: var(--text-sm);
-}
-
-.route-time__icon {
-  color: var(--color-accent-primary);
-  flex-shrink: 0;
-}
-
-.route-time__icon .icon {
-  width: 18px;
-  height: 18px;
-}
-
-.route-time__label {
-  color: var(--color-text-secondary);
-  flex: 1;
-}
-
-.route-time__value {
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-  font-family: var(--font-heading);
-  font-size: var(--text-base);
-}
-
 /* Wikiloc Link */
 .route-info__link {
   display: inline-flex;
