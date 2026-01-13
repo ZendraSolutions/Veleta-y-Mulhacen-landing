@@ -2280,8 +2280,8 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-4);
-  color: var(--color-text-muted);
-  opacity: 0.6;
+  color: var(--color-text-secondary);
+  opacity: 1;
 }
 
 .locked-overlay__icon .icon {
